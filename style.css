@@ -1,0 +1,435 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro, .sidebar {
+    width: 48%;
+    padding: 20px;
+    background-color: lightgray;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(107, 107, 119);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(121, 121, 124);
+}
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .intro, .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    animation: fadeIn 2s ease-in-out;
+}
+/* Set background color for the entire page */
+body {
+    background-color: #ed4040; /* Light gray */
+    color: #333; /* Dark text */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Change navigation bar background and text color */
+nav {
+    background-color: #9a9b9c; /* Blue */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-weight: bold;
+}
+
+/* Style headings */
+h1, h2 {
+    color: #ff6600; /* Orange */
+}
+
+/* Add a background color to the hero section */
+.hero {
+    background-color: #b2b7bd; /* Blue */
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style service cards */
+.service-card {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background-color: #ff6600; /* Orange hover effect */
+    color: white;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/custom-font.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e2e5e8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9b9c9e;
+}
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header .hero {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header .hero-overlay h1 {
+    margin-bottom: 10px;
+}
+
+header .hero-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Service section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* CSS Grid for service cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover effect for cards */
+.service-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3; /* Set background color of the entire page to grey */
+}
+
+/* Hero section */
+header .hero {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header .hero-overlay h1 {
+    margin-bottom: 10px;
+}
+
+header .hero-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Service section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Set background color of the section behind services */
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Service section heading */
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* CSS Grid for service cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: rgb(98, 28, 28);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover effect for cards */
+.service-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* Contact Form Styling */
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+    }
+}

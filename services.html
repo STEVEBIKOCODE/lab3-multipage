@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TheComeBack Mobile & Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        function showServiceDetails(serviceId) {
+            const services = document.querySelectorAll('.service-detail');
+            services.forEach(service => service.style.display = 'none');
+            document.getElementById(serviceId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">TheComeBack Mobile & Tech</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Explore Our Professional Tech Services</h1>
+            <p>Innovative solutions to meet your mobile and tech needs.</p>
+        </div>
+    </header>
+    
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>Click on a service to learn more.</p>
+
+        <!-- CSS Grid layout for service cards -->
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="images/mobile-repair-icon.png" alt="Mobile Repairs">
+                <h3>📱 Mobile Repairs</h3>
+                <p>We fix all smartphone issues, including screen replacements, battery problems, and software repairs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/software-dev-icon.png" alt="Software Development">
+                <h3>💻 Software Development</h3>
+                <p>We build websites, mobile apps, and business software solutions tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/tech-consulting-icon.png" alt="Tech Consulting">
+                <h3>🛠 Tech Consulting</h3>
+                <p>Get expert advice on tech solutions, IT infrastructure, and digital transformation.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/network-icon.png" alt="Network Installation">
+                <h3>🌐 Network Installation</h3>
+                <p>We provide network setup services, including Wi-Fi installation, server setup, and IT infrastructure optimization.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/digital-marketing-icon.png" alt="Digital Marketing">
+                <h3>📢 Digital Marketing</h3>
+                <p>Boost your online presence with our SEO, social media management, and digital advertising services.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/hardware-maintenance-icon.png" alt="Hardware Maintenance">
+                <h3>🖥 Hardware Maintenance</h3>
+                <p>Regular maintenance and repairs for desktops, laptops, and other hardware components.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/cybersecurity-icon.png" alt="Cybersecurity Solutions">
+                <h3>🔒 Cybersecurity Solutions</h3>
+                <p>Protect your business from cyber threats with our comprehensive cybersecurity services.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TheComeBack Mobile & Tech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
